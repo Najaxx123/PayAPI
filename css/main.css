@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+}
+
+body {
+    background-color: #EDF3F8;
+}
+
+.link {
+    text-decoration: none;
+    color: #FBFCFE;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17.63px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #1B262F;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
