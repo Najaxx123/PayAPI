@@ -13,6 +13,41 @@ body {
   display: none;
 }
 
+.menu-link-pricing, .menu-link-about, .menu-link-contact {
+  text-decoration: none;
+  color: #36536b;
+  font-family: Public Sans;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.63px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none  ;
+  width: 51px;
+  height: 18px;
+  top: 11px;
+  left: 199px;
+  gap: 0px;
+  opacity: 0.7px;
+  
+} 
+
+.menu-link-pricing {
+  margin-right: 8px;
+}
+
+.menu-link-about {
+  margin-right: 8px;
+}
+
+.menu-link-contact {
+  margin-right: 8px;
+}
+
+.cta {
+  display: none;
+}
+
 .link {
   text-decoration: none;
   color: #fbfcfe;
@@ -27,6 +62,12 @@ body {
   justify-content: center;
 }
 
+.hero-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer {
   background-color: #1b262f;
 }
@@ -39,24 +80,15 @@ footer {
 @media screen and (min-width: 768px) {
   header {
     max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   .main-nav {
     display: flex;
-    justify-content: space-around;
   }
 
-  .menu-burger {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-    header {
-        max-width: 1100px;
-    }
-}
-
-.cta {
+  .cta {
     font-family: Public Sans;
     font-size: 15px;
     font-weight: 700;
@@ -66,15 +98,68 @@ footer {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     text-decoration: none;
-    background-color: #BA4270;
-    color:#FBFCFE ;
+    background-color: #ba4270;
+    color: #fbfcfe;
     display: block;
     padding: 16px;
     border-radius: 32px;
+    
+  }
+
+  .menu-burger {
+    display: none;
+  }
 }
 
-.menu-link {
-    text-decoration: none;
-    color:#36536B ;
+.hero-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.hero-title {
+  text-align: center;
+  color: #36536b;
+  font-family: DM Serif Display;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.hero-title h1 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    max-width: 1100px;
+  }
+
+  .logo {
+    margin-right: 16px;
+  }
+
+  .header-container {
+    justify-content: unset;
+  }
+
+  .main-nav {
+    margin-left: 32px;
+  }
+  .menu-link-pricing {
+    margin-right: 32px;
+  }
+  
+  .menu-link-about {
+    margin-right: 32px;
+  }
+  
+  .menu-link-contact {
+    margin-right: 32px;
+  }
+
+  .cta {
+    margin-left: auto;
+  }
 }
 
