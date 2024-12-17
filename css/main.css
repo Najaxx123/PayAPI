@@ -13,7 +13,9 @@ body {
   display: none;
 }
 
-.menu-link-pricing, .menu-link-about, .menu-link-contact {
+.menu-link-pricing,
+.menu-link-about,
+.menu-link-contact {
   text-decoration: none;
   color: #36536b;
   font-family: Public Sans;
@@ -22,15 +24,14 @@ body {
   line-height: 17.63px;
   text-align: left;
   text-underline-position: from-font;
-  text-decoration-skip-ink: none  ;
+  text-decoration-skip-ink: none;
   width: 51px;
   height: 18px;
   top: 11px;
   left: 199px;
   gap: 0px;
   opacity: 0.7px;
-  
-} 
+}
 
 .menu-link-pricing {
   margin-right: 8px;
@@ -91,10 +92,6 @@ body {
   font-size: 32px;
 }
 
-.phone {
-  box-shadow: 25px 25px 80px 0px #36536b4d;
-} 
-
 
 footer {
   background-color: #1b262f;
@@ -107,19 +104,17 @@ footer {
 
 .cta-email {
   font-family: Public Sans;
-  font-size: 15px;
   font-weight: 700;
   line-height: 17.63px;
-  letter-spacing: -0.11538461595773697px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-decoration: none;
   background-color: #ba4270;
   color: #fbfcfe;
   display: block;
-  padding: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+  margin-right: 1px;
   border-radius: 32px;
+  margin-top: 8px;
 }
 
 .main-form {
@@ -129,24 +124,38 @@ footer {
 
 .main-form input {
   width: 100%;
-  margin-bottom: 16px;
   padding: 16px 24px;
   border-radius: 32px;
+  border: none;
 }
 
-.main-form button {
+.cta-email {
   width: 100%;
+  border: none;
 }
- 
+
+.help-link {
+  margin-top: 16px;
+  text-align: center;
+  color: #6c8294;
+}
+
+.help-link a {
+  color: #6c8294;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Public Sans;
+}
+
 .question-container {
   text-align: center;
-  color: #6C8294;
+  color: #6c8294;
   font-family: Public Sans;
 }
 
 .question-container a {
   text-decoration: none;
-  color: #6C8294;
+  color: #6c8294;
   font-family: Public Sans;
   font-weight: bold;
   font-size: 16px;
@@ -182,8 +191,21 @@ footer {
   .menu-burger {
     display: none;
   }
-}
 
+  .main-form {
+    position: relative;
+  }
+
+  .cta-email {
+    position: absolute;
+    width: unset;
+    right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 0;
+    margin-top: 0px;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   header {
@@ -204,13 +226,28 @@ footer {
   .menu-link-pricing {
     margin-right: 32px;
   }
-  
+
   .menu-link-about {
     margin-right: 32px;
   }
-  
+
   .menu-link-contact {
     margin-right: 32px;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 1100px;
+  }
+
+  .main-form {
+    padding: 0;
+  }
+
+  .help-link { 
+    text-align: left;
   }
 
   .cta {
@@ -218,10 +255,7 @@ footer {
   }
 
   .cta-email {
-    margin-left: 1000px;
-    position: relative;
-    top: -73px;
-    left: -500px;
+    margin-top: 0px;
+    right: 0;
   }
 }
-
